@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Documented Locations of Escuelitas Locales in Texas 1880-1960</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!-- Add the `mapbox-gl-js` library to the page. This gives our JS code below access to the `mapboxgl` object -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+
+    <!-- Add some default styling for the map container & controls -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- Load the `mapbox-gl-geocoder` plugin. -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+    <!-- Add a #map element to the page, to serve as the map's container -->
+    <div id='map'></div>
+
+    <script>
+
+    // Set an access token to allow the browser to load the map from our account
+    // TODO replace this with YOUR access token!
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamV3ZWx1enF1aWFubyIsImEiOiJja2hqd2J0cTcwc3dsMndwaGN4cW8wb3V3In0.zrLSxxvPfu6VoUmZpbASSg';
+
+    // Instantiate a new Map object to load the map itself
+    const map = new mapboxgl.Map({
+      style: 'mapbox://styles/jeweluzquiano/ckrzkp46w14wc17q9d9tmp7ui', //TODO replace this with YOUR style URL! This tells the map which style to use
+      container: 'map', // id of the container div we created above
+      center: [-98.90686, 30.94089], // the location to display when the map first loads
+      zoom: 5.2, // the zoom level to display when the map first loads
+    });
+// add the geocoder control to the map.
+map.addControl(
+  new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl
+  })
+);
+    // Part 4 code will go here
+    map.on('click', ({ point }) => {
+      // If the user clicked on one of your markers, get its information.
+ const features = map.queryRenderedFeatures(point, {
+   layers: ['escuelita-locales-3cafe4'] // replace with your layer name
+ });
+ if (!features.length) {
+   return;
+ }
+ const feature = features[0];
+
+ // Code from the next step will go here.
+ /*
+    Create a popup, specify its options
+    and properties, and add it to the map.
+  */
+const popup = new mapboxgl.Popup({ offset: [0, -15] })
+  .setLngLat(feature.geometry.coordinates)
+  .setHTML(
+    `<h3>${feature.properties.title}</h3>`
+  )
+  .addTo(map);
+    });
+    </script>
+  </body>
+</html>

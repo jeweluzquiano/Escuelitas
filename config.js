@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/jeweluzquiano/cksxu3qwk11hn17qg5dthymu4',
+    style: 'mapbox://styles/jeweluzquiano/ckrzkp46w14wc17q9d9tmp7ui',
     accessToken: 'pk.eyJ1IjoiamV3ZWx1enF1aWFubyIsImEiOiJjazE1aDdxbW0wdTc5M2twa21wMHN5dmt4In0.8oWsvXBqTQTUG8PF_E8Gng',
     showMarkers: false,
     theme: 'dark',

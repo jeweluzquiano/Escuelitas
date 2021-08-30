@@ -4,7 +4,7 @@ var config = {
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'Documented Locations of Escuelitas Locales in Texas 1880-1960',
+    title: 'Documented Locations of Escuelita Locales in Texas 1880-1960',
     subtitle: 'A living map from archival records, oral history interiews and historical newspapers',
     byline: 'By Philis M. Barragan Goetz and Jewel Uzquiano',
     footer: 'Source: Reading, Writing, and Revolution by Philis M. Barragan Goetz',

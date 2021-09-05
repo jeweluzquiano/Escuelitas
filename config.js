@@ -929,6 +929,19 @@ var config = {
                 // }
             ]
           },
-
+        {
+              id: 'send-off',
+              title: 'How to Learn More',
+              image: '',
+              description: 'You can learn more about ongoing research efforts on escuelita history from Dr. Barragan Goetz and connecting with her through the contact page of this website',
+              location: {
+                  center: [-98.90686, 30.94089],
+                  zoom: 5.2,
+                  pitch: 30.00,
+                  bearing: 0
+              },
+              onChapterEnter:[],
+              onChapterExit:[]
+            },
     ]
 };

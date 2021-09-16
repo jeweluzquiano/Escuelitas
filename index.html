@@ -2,110 +2,28 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Documented Locations of Escuelitas Locales in Texas 1880-1960</title>
+    <title>Documented Locations of Escuelita Locales in Texas 1880-1960</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='./style.css' rel='stylesheet'>
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
-    <style>
-        body {
-            margin:0;
-            padding:0;
-            font-family: serif;
-        }
-        a, a:hover, a:visited {
-            color: #0071bc;
-        }
-        #map {
-            top:0;
-            height: 100vh;
-            width:100vw;
-            position: fixed;
-            z-index: -5;
-        }
-        #header {
-            margin: 3vh auto;
-            width: 90vw;
-            padding: 2vh;
-            text-align: center;
-        }
-        #footer {
-            width: 100%;
-            min-height: 5vh;
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            text-align: center;
-            line-height: 25px;
-            font-size: 13px;
-        }
-        #features {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
-            z-index: 100;
-        }
-        .centered {
-            width: 50vw;
-            margin: 0 auto;
-        }
-        .lefty {
-            width: 33vw;
-            margin-left: 5vw;
-        }
-        .righty {
-            width: 33vw;
-            margin-left: 62vw;
-        }
-        .light {
-            color: #444;
-            background-color: #fafafa;
-        }
-        .dark {
-            color: #fafafa;
-            background-color: #444;
-        }
-        .step {
-            padding-bottom: 50vh;
-            /* margin-bottom: 10vh; */
-            opacity: 0.25;
-        }
-        .step.active {
-            opacity: 0.9;
-        }
-
-        .step div {
-            padding:  25px 50px;
-            line-height: 25px;
-            font-size: 13px;
-        }
-
-        .step img {
-            width: 100%;
-        }
-
-        @media (max-width: 750px) {
-            #features {
-                width: 90vw;
-                margin: 0 auto;
-            }
-        }
-
-        /* Fix issue on mobile browser where scroll breaks  */
-        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
-        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
-            touch-action: unset;
-        }
-
-        </style>
+        <nav class="topnav">
+          <a class="active" href="#intro">Beginning</a>
+          <strong><a href="https://www.tamusa.edu/college-of-arts-and-sciences/communication-history-philosophy/history/faculty/philis-barragan-goetz-bio.html" target="_blank" style="color:black;">Contact</a></strong>
+          <!-- <a href="#about">About</a> -->
+        </nav>
 </head>
 
 <body>
-  <iframe src='staticmap.html' width='50%' height='400px' title='Locations'></iframe>
 <div id="map"></div>
 
 <div id="story"></div>
+
 <script src="./config.js"></script>
 <script>
+
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
@@ -269,12 +187,12 @@ map.on("load", function() {
         }
     });
 });
-
+const language = new MapboxLanguage();
+map.addControl(language);
 // setup resize event
 window.addEventListener('resize', scroller.resize);
 
-
 </script>
-
+<footer></footer>
 </body>
 </html>

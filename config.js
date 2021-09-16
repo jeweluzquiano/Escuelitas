@@ -1,22 +1,48 @@
 var config = {
-    style: 'mapbox://styles/jeweluzquiano/ckrzkp46w14wc17q9d9tmp7ui',
+    style: 'mapbox://styles/jeweluzquiano/ckt7pc1hq47ch18qce6u0ljle',
     accessToken: 'pk.eyJ1IjoiamV3ZWx1enF1aWFubyIsImEiOiJjazE1aDdxbW0wdTc5M2twa21wMHN5dmt4In0.8oWsvXBqTQTUG8PF_E8Gng',
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'Documented Locations of Escuelita Locales in Texas 1880-1960',
+    title: 'Documented Locations of Escuelitas Locales in Texas 1880-1960',
     subtitle: 'A living map from archival records, oral history interiews and historical newspapers',
     byline: 'By Philis M. Barragan Goetz and Jewel Uzquiano',
-    footer: 'Source: Reading, Writing, and Revolution by Philis M. Barragan Goetz',
+    footer: 'Source: Reading, Writing, and Revolution by Philis M. Barragan Goetz <br> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
     chapters: [
         {
             id: 'intro',
             title: 'What is an Escuelita?',
             image: 'images/barragan-goetz_7140_cvr.jpeg',
+            //image: '/staticmap.html',
             description: 'In Texas, Spanish-language community schools called escuelitas were a vehicle ethnic Mexicans used to negotiate their power in the education system.',
             location: {
-                center: [-98.90686, 30.94089],
-                zoom: 5.2,
+                center: [-103.70686, 30.94089],
+                zoom: 5,
+                pitch: 30.00,
+                bearing: 0
+            },
+            onChapterEnter: [
+                // {
+                //     layer: '',
+                //     opacity: 1
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'descrip',
+            title: 'Storytelling Map',
+            //image: 'images/barragan-goetz_7140_cvr.jpeg',
+            //image: '/staticmap.html',
+            description: 'In the following story map, you can scroll through locations of documented escuelitas and find out more about their individual history',
+            location: {
+                center: [-103.70686, 30.94089],
+                zoom: 5,
                 pitch: 30.00,
                 bearing: 0
             },
@@ -36,8 +62,8 @@ var config = {
         {
             id: 'laredo',
             title: 'Laredo',
-            image: './path/to/image/source.png',
-            description: 'Description',
+            //image: './path/to/image/source.png',
+            description: '',
             location: {
                 center: [-99.49954, 27.53085],
                 zoom: 8.81,
@@ -76,7 +102,7 @@ var config = {
             onChapterExit:[]
           },
           {
-            id:'rio hondo',
+            id:'rio-hondo',
             title: 'Rio Hondo',
             image: '',
             description: '',
@@ -114,7 +140,7 @@ var config = {
             ]
           },
           {
-            id: 'san benito',
+            id: 'san-benito',
             title: 'San Benito',
             image: '',
             description: '',
@@ -138,7 +164,7 @@ var config = {
             ]
           },
           {
-            id: 'san antonio',
+            id: 'san-antonio',
             title: 'San Antonio',
             image: '',
             description: '',
@@ -186,7 +212,7 @@ var config = {
             ]
           },
           {
-            id: 'corpus christi',
+            id: 'corpus-christi',
             title: 'Corpus Christi',
             image: '',
             description: '',
@@ -210,7 +236,7 @@ var config = {
             ]
           },
           {
-            id: 'rio grande city',
+            id: 'rio-grande-city',
             title: 'Rio Grande City',
             image: '',
             description: '',
@@ -282,7 +308,7 @@ var config = {
             ]
           },
           {
-            id: 'port arthur',
+            id: 'port-arthur',
             title: 'Port Arthur',
             image: '',
             description: '',
@@ -330,7 +356,7 @@ var config = {
             ]
           },
           {
-            id: '16-big wells',
+            id: '16-big-wells',
             title: 'Big Wells',
             image: '',
             description: '',
@@ -354,7 +380,7 @@ var config = {
             ]
           },
           {
-            id: 'el paso',
+            id: 'el-paso',
             title: 'El Paso',
             image: '',
             description: '',
@@ -378,7 +404,7 @@ var config = {
             ]
           },
           {
-            id: 'eagle pass',
+            id: 'eagle-pass',
             title: 'Eagle Pass',
             image: '',
             description: '',
@@ -570,7 +596,7 @@ var config = {
             ]
           },
           {
-            id: 'agua nueva',
+            id: 'agua-nueva',
             title: 'Agua Nueva',
             image: '',
             description: '',
@@ -666,7 +692,7 @@ var config = {
             ]
           },
           {
-            id:'del rio',
+            id:'del-rio',
             title:'Del Rio',
             image:'',
             description:'',
@@ -690,7 +716,7 @@ var config = {
             ]
           },
           {
-            id:'crystal city',
+            id:'crystal-city',
             title:'Crystal City',
             image:'',
             description:'',
@@ -738,7 +764,7 @@ var config = {
             ]
           },
           {
-            id:'uribeno cemetery',
+            id:'uribeno-cemetery',
             title:'Uribeno Cemetery',
             image:'',
             description:'',
@@ -834,7 +860,7 @@ var config = {
             ]
           },
           {
-            id:'clear springs',
+            id:'clear-springs',
             title:'Clear Springs',
             image:'',
             description:'',
@@ -858,7 +884,7 @@ var config = {
             ]
           },
           {
-            id:'san diego',
+            id:'san-diego',
             title:'San Diego',
             image:'',
             description:'',
@@ -906,7 +932,7 @@ var config = {
             ]
           },
           {
-            id:'el campo ranch',
+            id:'el-campo-ranch',
             title:'El Campo Ranch',
             image:'',
             description:'',
@@ -929,11 +955,11 @@ var config = {
                 // }
             ]
           },
-        {
+          {
               id: 'send-off',
               title: 'How to Learn More',
               image: '',
-              description: 'You can learn more about ongoing research efforts on escuelita history from Dr. Barragan Goetz and connecting with her through the contact page of this website',
+              description: 'You can learn more about ongoing research efforts on escuelita history from Dr. Barragan Goetz and connect with her <strong><a href="https://www.tamusa.edu/college-of-arts-and-sciences/communication-history-philosophy/history/faculty/philis-barragan-goetz-bio.html" target="_blank" style="color:black;">here.</a></strong> <br> <strong><a href="#intro" style="color:black;">Back to Top</a></strong>',
               location: {
                   center: [-98.90686, 30.94089],
                   zoom: 5.2,

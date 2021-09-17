@@ -6,7 +6,7 @@ var config = {
     alignment: 'left',
     title: 'Documented Locations of Escuelitas Locales in Texas 1880-1960',
     subtitle: 'A living map from archival records, oral history interiews and historical newspapers',
-    byline: 'By Philis M. Barragan Goetz and Jewel Uzquiano',
+    byline: 'By Philis M. Barragán Goetz and Jewel Uzquiano',
     footer: 'Source: Reading, Writing, and Revolution by Philis M. Barragan Goetz <br> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
     chapters: [
         {
@@ -39,7 +39,7 @@ var config = {
             title: 'Storytelling Map',
             //image: 'images/barragan-goetz_7140_cvr.jpeg',
             //image: '/staticmap.html',
-            description: 'In the following story map, you can scroll through locations of documented escuelitas and find out more about their individual history',
+            description: 'In the following story map, you can scroll through locations of documented escuelitas and find out more about their individual history.',
             location: {
                 center: [-103.70686, 30.94089],
                 zoom: 5,

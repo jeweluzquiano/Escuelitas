@@ -15,23 +15,25 @@ a, a:hover, a:visited {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: white;
+  color: black;
   text-align: center;
   padding: 10px 10px;
+  background-color: #9a8f8f;
   text-decoration: underline;
   font-size: 15px;
+  font-family: 'IM Fell Great Primer', serif;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
 background-color: #efe8e1;
-color: white;
+color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
 background-color: #9a8f8f;
-color: white;
+color: black;
 }
 
 #map {
@@ -46,6 +48,7 @@ color: white;
     width: 90vw;
     padding: 2vh;
     text-align: center;
+    font-family: 'IM Fell Great Primer', serif;
 }
 #footer {
     width: 100%;
@@ -55,11 +58,14 @@ color: white;
     text-align: center;
     line-height: 25px;
     font-size: 13px;
+    font-style: normal;
+    font-family: 'IM Fell Great Primer', serif;
 }
 #features {
     padding-top: 10vh;
     padding-bottom: 10vh;
     z-index: 100;
+    font-family: 'IM Fell Great Primer', serif;
 }
 .centered {
     width: 50vw;
@@ -94,6 +100,7 @@ color: white;
     padding:  25px 50px;
     line-height: 25px;
     font-size: 17px;
+    background-color: #6e6c74s;
 }
 
 .step img {

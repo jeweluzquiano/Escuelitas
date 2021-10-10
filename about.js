@@ -14,7 +14,7 @@ var config = {
             title: 'Philis M. Barragán Goetz',
             image: 'images/philis-barragan-goetz-headshot.jpg',
             //image: '/staticmap.html',
-            description: '',
+            description: 'Here is where we can have a short description about our backgrounds.',
             location: {
               center: [-98.57101, 29.43056],
               zoom: 9.42,

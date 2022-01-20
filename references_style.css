@@ -1,0 +1,123 @@
+
+/* comment
+box-model fix
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+} */
+
+/* Color Palette CSS HEX */
+/* --celadon: #b8dca7ff; a light green
+--light-salmon: #eb9970ff; a salmon pink
+--fire-opal: #d7695bff; a darker pink
+--liver-organ: #6a2f24ff; a dark brown
+--ivory: #fdfeecff; a light color
+--dark-jungle-green: #151910ff;
+--green-yellow-crayola: #e1dd8fff;
+--indian-red: #d9595fff;
+--steel-blue: #4c86a8ff;
+--teal-blue: #477890ff;
+--orange-yellow-crayola: #f5cd76ff;
+--dark-jungle-green: #1b2323ff;
+--beige: #fdffeaff;
+--pastel-pink: #dca497ff;
+--granny-smith-apple: #a4d195ff;*/
+
+/* Global Styles */
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+body {
+  color: #151910ff;
+  background-color: #fdfeecff;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'IM Fell Great Primer', serif;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #151910ff;
+  /* background: #151910ff; */
+  padding: 4px;
+  border-radius: 4px;
+}
+.btn {
+  color: #F8ECDC;
+  background: #151910ff;
+  padding: 4px;
+  border-radius: 4px;
+}
+.btn:hover {
+  text-decoration: none;
+  background: #151910ff;
+  padding: 6px;
+  border-radius: 4px;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h1, h2 {
+  font-family: 'IM Fell Great Primer', serif;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Profile */
+header {
+  background: #4C4C4E;
+  padding: 1px;
+}
+
+/* Projects */
+.projects {
+  background: #fdfeecff;
+}
+.projects .btn {
+  display: inline-block;
+}
+/* Work Experience */
+.data-sources {
+  background: #F8ECDC;
+}
+.ref-item {
+  overflow: hidden;
+  border-bottom: 1px dashed #1b2323ff;
+  padding: 25px 0;
+}
+.project-item img{
+  float: left;
+  margin-right: 20px;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+/* Education */
+
+
+/* Contact Me */
+footer {
+  background: #4C4C4E;
+  padding: 4px;
+}
+/* .contact a {
+  margin: 25px, 20px;
+} */

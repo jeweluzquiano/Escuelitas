@@ -28,7 +28,7 @@ a, a:hover, a:visited {
     color: #f5cd76ff;
 }
 .topnav {
-  /* background-color: #333; */
+  background-color: #9a8f8f;
   overflow: hidden;
   position: fixed;
   z-index: 1;

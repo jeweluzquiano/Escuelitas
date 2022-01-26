@@ -263,7 +263,7 @@ var config = {
             id: 'hebbronville',
             title: 'Hebbronville',
             image: '',
-            description: '',
+            description: 'One of the most famous escuelitas, el Colegio Altamirano, opened in Hebbronville in 1897 and remained open until 1958. El Colegio enrolled students from kindergarten to sixth grade, lasting over 60 years with full community support.',
             location: {
               center: [-98.68078, 27.30753],
               zoom: 9.25,
@@ -527,7 +527,7 @@ var config = {
             id: 'hidalgo',
             title: 'Hidalgo',
             image: '',
-            description: '',
+            description: 'Juan Miguel da la Viña, one of the first ethnic Mexicans to be a county superintendent of public instruction in Texas, owned El Capote Ranch, which had its own escuelita called El Capote School.',
             location: {
               center: [-98.26283, 26.09949],
               zoom: 12.60,

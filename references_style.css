@@ -41,6 +41,39 @@ body {
   font-family: 'IM Fell Great Primer', serif;
   line-height: 1.5;
 }
+a, a:hover, a:visited {
+    color: #0071bc;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: #9a8f8f;
+  text-decoration: underline;
+  font-size: 15px;
+  font-family: 'IM Fell Great Primer', serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #efe8e1;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #9a8f8f;
+color: black;
+}
+
 img {
   width: 300px;
 }

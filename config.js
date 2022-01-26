@@ -39,7 +39,7 @@ var config = {
             title: 'Storytelling Map',
             //image: 'images/barragan-goetz_7140_cvr.jpeg',
             //image: '/staticmap.html',
-            description: 'In the following story map, you can scroll through locations of documented escuelitas and find out more about their individual history.',
+            description: 'In the following story map, you can scroll through locations of documented escuelitas throughout South Texas.',
             location: {
                 center: [-103.70686, 30.94089],
                 zoom: 5,

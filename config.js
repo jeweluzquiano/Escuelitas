@@ -63,7 +63,7 @@ var config = {
             id: 'laredo',
             title: 'Laredo',
             //image: './path/to/image/source.png',
-            description: '',
+            description: 'In the late 19th and early 20th century, Texas public schools were remote and far removed from many ethnic Mexican communities, failing ethnic Mexican children. Those who attended escuelitas note that the curriculum was more academically challenging than public school. Students learned grammar, arithemtic, geometry, history, literature, and current events. Meanwhile, public schools focused solely on teaching them English.',
             location: {
                 center: [-99.49954, 27.53085],
                 zoom: 8.81,

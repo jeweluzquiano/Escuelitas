@@ -12,6 +12,7 @@ a, a:hover, a:visited {
   position: fixed;
   z-index: 1;
   border-radius: 4px;
+  top: 10px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -87,6 +88,7 @@ color: black;
 .dark {
     color: #fafafa;
     background-color: #444;
+    border-radius: 4px
 }
 .step {
     padding-bottom: 50vh;

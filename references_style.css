@@ -86,12 +86,13 @@ a {
   border-radius: 4px;
 }
 .btn {
-  color: #F8ECDC;
+  color: #E3BA49;
   background: #151910ff;
   padding: 4px;
   border-radius: 4px;
 }
 .btn:hover {
+  color: #E3BA49;
   text-decoration: none;
   background: #151910ff;
   padding: 6px;

@@ -4,7 +4,7 @@ var config = {
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'Documented Locations of Escuelita Locales in Texas 1880-1960',
+    title: 'Documented Locations of Escuelita Locales in Texas from 1880 through 1960',
     subtitle: 'A living map from archival records, oral history interiews and historical newspapers',
     byline: 'By Philis M. Barragán Goetz and Jewel Uzquiano',
     footer: 'Source: Reading, Writing, and Revolution by Philis M. Barragan Goetz <br> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
@@ -12,9 +12,32 @@ var config = {
         {
             id: 'intro',
             title: 'What is an Escuelita?',
+            description: 'In South Texas, Spanish-language community schools called escuelitas were a vehicle ethnic Mexicans used to negotiate their power in the early Texas education system.',
+            location: {
+                center: [-103.70686, 30.94089],
+                zoom: 5,
+                pitch: 30.00,
+                bearing: 0
+            },
+            onChapterEnter: [
+                // {
+                //     layer: '',
+                //     opacity: 1
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'book',
+            title: 'Published Works on Escuelita history',
             image: 'images/barragan-goetz_7140_cvr.jpeg',
             //image: '/staticmap.html',
-            description: 'In Texas, Spanish-language community schools called escuelitas were a vehicle ethnic Mexicans used to negotiate their power in the education system.',
+            description: 'Dr. Philis Barragán Goetz researched and documented the history of escuelitas in South Texas as part of her dissertation and published her work in a book titled, "Reading, Writing, and Revolution: Escuelitas and the Emergence of a Mexican American Identity in Texas". ',
             location: {
                 center: [-103.70686, 30.94089],
                 zoom: 5,

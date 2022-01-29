@@ -982,7 +982,7 @@ var config = {
               id: 'send-off',
               title: 'How to Learn More',
               image: '',
-              description: 'You can learn more about ongoing research efforts on escuelita history from Dr. Barragan Goetz and connect with her <strong><a href="https://www.tamusa.edu/college-of-arts-and-sciences/communication-history-philosophy/history/faculty/philis-barragan-goetz-bio.html" target="_blank" style="color:black;">here.</a></strong> <br> <strong><a href="#intro" style="color:black;">Back to Top</a></strong>',
+              description: 'You can learn more about ongoing research efforts on escuelita history from Dr. Barragan Goetz and connect with her <b><a href="https://www.tamusa.edu/college-of-arts-and-sciences/communication-history-philosophy/history/faculty/philis-barragan-goetz-bio.html" target="_blank" style="color:black;">here.</a></b> <br> <b><a href="#intro" style="color:black;">Back to Top</a></b>',
               location: {
                   center: [-98.90686, 30.94089],
                   zoom: 5.2,

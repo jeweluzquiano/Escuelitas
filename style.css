@@ -1,14 +1,15 @@
 body {
     margin:0;
     padding:0;
-    font-family: serif;
+    font-family: 'IM Fell Great Primer', serif;
+    line-height: 1;
 }
 a, a:hover, a:visited {
-    color: #0071bc;
+    color: #f5cd76ff;
 }
 .topnav {
   display: flex;
-  background-color: #333;
+  background-color: #9a8f8f;
   overflow:  hidden;
   position: fixed;
   z-index: 1;
@@ -37,6 +38,77 @@ color: black;
 .topnav a.active {
 background-color: #9a8f8f;
 color: black;
+}
+
+a {
+  color: #151910ff;
+  /* background: #151910ff; */
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.btn {
+  color: #E3BA49;
+  background: #151910ff;
+  padding: 4px;
+  border-radius: 4px;
+}
+.btn:hover {
+  color: #E3BA49;
+  text-decoration: none;
+  background: #151910ff;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 2.5;
+  color: #fafafa;
+}
+h2{
+  font-size: 25px;
+}
+h1, h2 {
+  font-family: 'IM Fell Great Primer', serif;
+  font-weight: 400;
+  margin: 0;
+}
+div.page-title {
+  height: 100px;
+  border-radius: 4px;
+}
+.page-title {
+  margin: 3vh auto;
+  text-align: center;
+  /* width: 800px;
+  margin: 0 auto;
+  padding: 30px 0; */
+}
+.content-wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+header {
+  background: #4C4C4E;
+  padding: 1px;
+}
+
+/* References */
+.data-sources {
+  background: #F8ECDC;
+}
+.ref-item {
+  overflow: hidden;
+  border-bottom: 1px dashed #1b2323ff;
+  padding: 25px 0;
+}
+
+footer {
+  background: #4C4C4E;
+  padding: 4px;
 }
 
 #map {

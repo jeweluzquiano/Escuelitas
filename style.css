@@ -203,6 +203,10 @@ footer {
 	z-index: 100;
 }
 
+.mapboxgl-popup {
+  max-width: 100px;
+  font-family: 'IM Fell Great Primer', serif;
+}
 /* Fix issue on mobile browser where scroll breaks  */
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {

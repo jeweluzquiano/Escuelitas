@@ -83,6 +83,30 @@ var config = {
             ]
         },
         {
+          id: 'hebbronville',
+          title: 'Hebbronville',
+          image: '',
+          description: 'One of the most famous escuelitas, el Colegio Altamirano, opened in Hebbronville in 1897 and remained open until 1958. El Colegio enrolled students from kindergarten to sixth grade, lasting over 60 years with full community support.',
+          location: {
+            center: [-98.68078, 27.30753],
+            zoom: 9.25,
+            pitch: 45.00,
+            bearing: 0.00
+          },
+          onChapterEnter: [
+              // {
+              //     layer: 'layer-name',
+              //     opacity: 1
+              // }
+          ],
+          onChapterExit: [
+              // {
+              //     layer: 'layer-name',
+              //     opacity: 0
+              // }
+          ]
+        },
+        {
             id: 'laredo',
             title: 'Laredo',
             //image: './path/to/image/source.png',
@@ -266,30 +290,6 @@ var config = {
             location: {
               center: [-98.81986, 26.37830],
               zoom: 9.69,
-              pitch: 45.00,
-              bearing: 0.00
-            },
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-          },
-          {
-            id: 'hebbronville',
-            title: 'Hebbronville',
-            image: '',
-            description: 'One of the most famous escuelitas, el Colegio Altamirano, opened in Hebbronville in 1897 and remained open until 1958. El Colegio enrolled students from kindergarten to sixth grade, lasting over 60 years with full community support.',
-            location: {
-              center: [-98.68078, 27.30753],
-              zoom: 9.25,
               pitch: 45.00,
               bearing: 0.00
             },

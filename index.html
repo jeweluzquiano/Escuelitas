@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap" rel="stylesheet">
         <nav role="navigation" aria-label="main menu" class="topnav">
             <a href="index.html">Story Map</a>
-            <a href="https://www.tamusa.edu/college-of-arts-and-sciences/communication-history-philosophy/history/faculty/philis-barragan-goetz-bio.html" target="_blank" style="color:black;">Contact</a>
+            <a href="https://www.tamusa.edu/college-of-arts-and-sciences/communication-hiconfig-philosophy/hiconfig/faculty/philis-barragan-goetz-bio.html" target="_blank" style="color:black;">Contact</a>
             <a href="about.html" target="_blank" >About</a>
             <a href="references.html" target="_blank" >References</a>
             <a href="staticmap.html" target="_blank"> Interactive Map</a>
@@ -26,8 +26,7 @@
 <div id="map"></div>
 
 <div id="story"></div>
-
-<script src="./story.js"></script>
+<script src="./story_map.js"></script>
 <script>
 
 var layerTypes = {
@@ -59,36 +58,36 @@ function setLayerOpacity(layer) {
 
 var story = document.getElementById('story');
 var features = document.createElement('div');
-features.classList.add(alignments[story.alignment]);
+features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
 
 var header = document.createElement('div');
 
-if (story.title) {
+if (config.title) {
     var titleText = document.createElement('h1');
-    titleText.innerText = story.title;
+    titleText.innerText = config.title;
     header.appendChild(titleText);
 }
 
-if (story.subtitle) {
+if (config.subtitle) {
     var subtitleText = document.createElement('h2');
-    subtitleText.innerText = story.subtitle;
+    subtitleText.innerText = config.subtitle;
     header.appendChild(subtitleText);
 }
 
-if (story.byline) {
+if (config.byline) {
     var bylineText = document.createElement('p');
-    bylineText.innerText = story.byline;
+    bylineText.innerText = config.byline;
     header.appendChild(bylineText);
 }
 
 if (header.innerText.length > 0) {
-    header.classList.add(story.theme);
+    header.classList.add(config.theme);
     header.setAttribute('id', 'header');
     story.appendChild(header);
 }
 
-story.chapters.forEach((record, idx) => {
+config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
 
@@ -116,7 +115,7 @@ story.chapters.forEach((record, idx) => {
         container.classList.add('active');
     }
 
-    chapter.classList.add(story.theme);
+    chapter.classList.add(config.theme);
     container.appendChild(chapter);
     features.appendChild(container);
 });
@@ -125,19 +124,19 @@ story.appendChild(features);
 
 var footer = document.createElement('div');
 
-if (story.footer) {
+if (config.footer) {
     var footerText = document.createElement('p');
-    footerText.innerHTML = story.footer;
+    footerText.innerHTML = config.footer;
     footer.appendChild(footerText);
 }
 
 if (footer.innerText.length > 0) {
-    footer.classList.add(story.theme);
+    footer.classList.add(config.theme);
     footer.setAttribute('id', 'footer');
     story.appendChild(footer);
 }
 
-mapboxgl.accessToken = story.accessToken;
+mapboxgl.accessToken = config.accessToken;
 
 const transformRequest = (url) => {
     const hasQuery = url.indexOf("?") !== -1;
@@ -149,18 +148,18 @@ const transformRequest = (url) => {
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: story.style,
-    center: story.chapters[0].location.center,
-    zoom: story.chapters[0].location.zoom,
-    bearing: story.chapters[0].location.bearing,
-    pitch: story.chapters[0].location.pitch,
+    style: config.style,
+    center: config.chapters[0].location.center,
+    zoom: config.chapters[0].location.zoom,
+    bearing: config.chapters[0].location.bearing,
+    pitch: config.chapters[0].location.pitch,
     scrollZoom: false,
     transformRequest: transformRequest
 });
 
 var marker = new mapboxgl.Marker();
-if (story.showMarkers) {
-    marker.setLngLat(story.chapters[0].location.center).addTo(map);
+if (config.showMarkers) {
+    marker.setLngLat(config.chapters[0].location.center).addTo(map);
 }
 
 // instantiate the scrollama
@@ -175,10 +174,10 @@ map.on("load", function() {
         progress: true
     })
     .onStepEnter(response => {
-        var chapter = story.chapters.find(chap => chap.id === response.element.id);
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.add('active');
         map.flyTo(chapter.location);
-        if (story.showMarkers) {
+        if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
         if (chapter.onChapterEnter.length > 0) {
@@ -186,7 +185,7 @@ map.on("load", function() {
         }
     })
     .onStepExit(response => {
-        var chapter = story.chapters.find(chap => chap.id === response.element.id);
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.remove('active');
         if (chapter.onChapterExit.length > 0) {
             chapter.onChapterExit.forEach(setLayerOpacity);

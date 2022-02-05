@@ -379,7 +379,7 @@ var config = {
             ]
           },
           {
-            id: '16-big-wells',
+            id: 'big-wells',
             title: 'Big Wells',
             image: '',
             description: '',

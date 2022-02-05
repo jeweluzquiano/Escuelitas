@@ -10,6 +10,8 @@
 
     <!-- Add some default styling for the map container & controls -->
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='./style.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap" rel="stylesheet">
       <nav class="topnav">
         <a href="index.html">Story Map</a>
         <a href="https://www.tamusa.edu/college-of-arts-and-sciences/communication-history-philosophy/history/faculty/philis-barragan-goetz-bio.html" target="_blank" style="color:black;">Contact</a>
@@ -18,85 +20,6 @@
         <a href="staticmap.html" target="_blank"> Interactive Map</a>
       </nav>
     <link rel="icon" href="images/book_icon.svg">
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        color: #151910ff;
-        background-color: #fdfeecff;
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
-        font-family: 'IM Fell Great Primer', serif;
-        line-height: 1;
-      }
-      a, a:hover, a:visited {
-          color: #f5cd76ff;
-      }
-      .topnav {
-        background-color: #9a8f8f;
-        overflow: hidden;
-        position: fixed;
-        z-index: 1;
-        border-radius: 4px;
-        top: 10px;
-      }
-      /* Style the links inside the navigation bar */
-      .topnav a {
-        float: left;
-        color: black;
-        text-align: center;
-        padding: 10px 10px;
-        background-color: #9a8f8f;
-        text-decoration: underline;
-        font-size: 15px;
-        font-family: 'IM Fell Great Primer', serif;
-      }
-
-      /* Change the color of links on hover */
-      .topnav a:hover {
-      background-color: #efe8e1;
-      color: black;
-      }
-
-      /* Add a color to the active/current link */
-      .topnav a.active {
-      background-color: #9a8f8f;
-      color: black;
-      }
-
-      img {
-        width: 300px;
-      }
-      a {
-        color: #151910ff;
-        /* background: #151910ff; */
-        padding: 4px;
-        border-radius: 4px;
-      }
-      .btn {
-        color: #E3BA49;
-        background: #151910ff;
-        padding: 4px;
-        border-radius: 4px;
-      }
-      .btn:hover {
-        color: #E3BA49;
-        text-decoration: none;
-        background: #151910ff;
-        padding: 6px;
-        border-radius: 4px;
-      }
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
-
   </head>
   <body>
     <!-- Load the `mapbox-gl-geocoder` plugin. -->
@@ -104,6 +27,12 @@
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
     <!-- Add a #map element to the page, to serve as the map's container -->
     <div id='map'></div>
+    <div id='title' class="title">
+      <h2>Documented Locations of Escuelita Locales in Texas from 1880 through 1960</h2>
+      <p><em>Click on locations to see where escuelitas have been documented.<em></p>
+        <hr>
+      <div id='legend' class="legend1">
+        <div> <img src="./data/star_rate_black_24dp.svg"<h4>Escuelita Locations</h4>
 
     <script>
 

@@ -189,6 +189,19 @@ footer {
         margin: 0 auto;
     }
 }
+/*Styling for static map*/
+.title{
+  background-color: #444;
+  opacity: 85%;
+  border-radius: 1em;
+  padding: 2vh;
+  top: 5em;
+  font-family: 'IM Fell Great Primer', serif;
+  position: absolute;
+	max-width: 25%;
+	margin: 0em 1em;
+	z-index: 100;
+}
 
 /* Fix issue on mobile browser where scroll breaks  */
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
